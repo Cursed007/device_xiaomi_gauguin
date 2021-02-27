@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/gauguin
 
 BUILD_BROKEN_DUP_RULES := true
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
