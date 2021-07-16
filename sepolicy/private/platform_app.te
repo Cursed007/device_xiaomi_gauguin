@@ -10,3 +10,9 @@ allow platform_app perfshielder:service_manager find;
 allow platform_app hal_displayfeature_xiaomi_hwservice:hwservice_manager find;
 
 allow platform_app vendor_sysfs_graphics:file r_file_perms;
+
+# QS Device info
+allow platform_app sysfs_device_info:lnk_file { read open getattr ioctl };
+allow platform_app vendor_sysfs_battery_supply:dir { search };
+allow platform_app vendor_sysfs_kgsl:file { read open getattr ioctl };
+allow platform_app vendor_sysfs_battery_supply:file { read open getattr ioctl };
