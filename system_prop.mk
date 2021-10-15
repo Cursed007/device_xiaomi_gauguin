@@ -45,9 +45,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PRODUCTY_OVERRIDES += \
-    ro.telephony.default_network=33,22 \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1
+    ro.telephony.default_network=33,22
 
 # Vulkan
 PRODUCT_PROPERTY_OVERRIDES += \
