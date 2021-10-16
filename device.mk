@@ -21,6 +21,7 @@ BOARD_BUILD_PRODUCT_IMAGE := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_TARGET_VNDK_VERSION := 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # AAPT
@@ -93,13 +94,6 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc
-
-# IFAA manager
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -193,13 +187,13 @@ PRODUCT_PACKAGES += \
     WifiOverlay
 
 # WiFi Display
-PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libnl \
-    libqdMetaData \
-    libavservices_minijail \
-    libavservices_minijail_32 \
-    vendor.display.config@2.0
+# PRODUCT_PACKAGES += \
+#     libdisplayconfig.qti \
+#     libnl \
+#     libqdMetaData \
+#     libavservices_minijail \
+#     libavservices_minijail_32 \
+#     vendor.display.config@2.0
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+# PRODUCT_BOOT_JARS += \
+#     WfdCommon
