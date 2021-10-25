@@ -111,12 +111,12 @@
          the content may be blanked.
          This flag controls whether the {@link Display#FLAG_SUPPORTS_PROTECTED_BUFFERS}
          flag is set for wifi displays.
-    -->
-    <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
-    <!-- Boolean indicating if restoring network selection should be skipped -->
-    <!-- The restoring is handled by modem if it is true-->
-    <bool name="skip_restoring_network_selection">true</bool>
-    <!-- Control whether the always on display mode is available. This should only be enabled on
+     -->
+     <bool name="config_wifiDisplaySupportsProtectedBuffers">false</bool>
+     <!-- Boolean indicating if restoring network selection should be skipped -->
+     <!-- The restoring is handled by modem if it is true-->
+     <bool name="skip_restoring_network_selection">true</bool>
+     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
          states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
@@ -678,7 +678,7 @@
         * The remote submix module "audio.r_submix.default" must be installed on the device.
         * The device must be provisioned with HDCP keys (for protected content).
     -->
-    <bool name="config_enableWifiDisplay">true</bool>
+    <bool name="config_enableWifiDisplay">false</bool>
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/usb/fastcharge_mode</string>
